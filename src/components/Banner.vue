@@ -30,65 +30,54 @@
 
 </script>
 
-<style lang="scss" scoped>
-.banner {
-  width: 100%;
-  height: 450px;
-  display: flex;
-  position: relative;
+<style lang="sass" scoped>
+.banner
+  width: 100%
+  height: 450px
+  display: flex
+  position: relative
 
-  &__outter {
-    background-image: url("@/assets/images/banner-side.png");
-    background-color: #0A655E;
-    width: 100%;
-    height: 80%;
-    background-repeat: no-repeat;
-    background-position: 10% 40%;
-    background-size: auto 140%;
-  }
+  &__outter
+    background-image: url("@/assets/images/banner-side.png")
+    background-color: #0A655E
+    width: 100%
+    height: 80%
+    background-repeat: no-repeat
+    background-position: 10% 40%
+    background-size: auto 140%
 
-  &__inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  &__inner
+    display: grid
+    grid-template-columns: 1fr 1fr
 
-  &__image {
-    position: absolute;
-    max-height: 450px;
+  &__image
+    position: absolute
+    max-height: 450px
 
-  }
+  .container
+    height: 100%
 
-  .container {
-    height: 100%;
-  }
+  .content
+    margin: 2rem
+    display: flex
+    text-align: left
+    color: #F1F5F5
 
-  .content {
-    margin: 2rem;
-    display: flex;
-    text-align: left;
-    color: #F1F5F5;
-  }
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: center
 
-  &__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  &__title
+    font-size: 56px
+    font-weight: bold
+    padding: 0
+    margin: 0
 
-  &__title {
-    font-size: 56px;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-  }
+  &__lead
+    font-size: 14px
+    font-weight: bold
 
-  &__lead {
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 14px;
-  }
-}
+  p
+    font-size: 14px
 </style>

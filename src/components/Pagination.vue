@@ -44,39 +44,34 @@ function goToPage(page: number) {
 }
 </script>
 
-<style lang="scss" scoped>
-.pagination {
-    display: flex;
-    justify-content: center;
-    gap: 2px;
+<style lang="sass" scoped>
+.pagination
+  display: flex
+  justify-content: center
+  gap: 2px
 
-    &__btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 33px;
-        width: 33px;
-        color: #6E8484;
-        border: none;
-        cursor: pointer;
-        transition-property: color, background-color;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-out;
+  &__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 33px
+    width: 33px
+    color: #6E8484
+    border: none
+    cursor: pointer
+    transition-property: color, background-color
+    transition-duration: 0.2s
+    transition-timing-function: ease-out
 
-        &:hover,
-        &--active {
-            background-color: #6E8484;
-            color: white;
+    &:hover,
+    &--active
+      background-color: #6E8484
+      color: white
 
-            svg {
-                fill: currentColor;
-            }
-        }
+      svg
+        fill: currentColor
 
-        svg {
-            width: 9px;
-            height: 9px;
-        }
-    }
-}
+    svg
+      width: 9px
+      height: 9px
 </style>

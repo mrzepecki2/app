@@ -41,36 +41,30 @@ const addToCart = (product: any) => {
 };
 </script>
 
-<style lang="scss" scoped>
-.magazine-search {
-  padding: 2rem;
-  background-color: white;
+<style lang="sass" scoped>
+.magazine-search
+  padding: 2rem
+  background-color: white
 
-  &__title {
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: left;
-    color: #0A655E;
-  }
+  &__title
+    font-size: 2.3rem
+    font-weight: bold
+    margin-bottom: 1rem
+    text-align: left
+    color: #0A655E
 
-  &__products {
-    margin: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+  &__products
+    margin: 50px 0
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 1rem
 
-    @media (max-width: 1200px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    @media (max-width: 1200px)
+      grid-template-columns: repeat(3, 1fr)
 
-    @media (max-width: 900px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    @media (max-width: 900px)
+      grid-template-columns: repeat(2, 1fr)
 
-    @media (max-width: 600px) {
-      grid-template-columns: 1fr;
-    }
-  }
-}
+    @media (max-width: 600px)
+      grid-template-columns: 1fr
 </style>

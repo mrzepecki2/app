@@ -49,100 +49,85 @@ const closeOverlay = () => {
 }
 </script>
 
-<style lang="scss" scoped>
-.cart {
-    z-index: 101;
-    background: #FFFFFF;
-    width: 381px;
+<style lang="sass" scoped>
+.cart
+  z-index: 101
+  background: #FFFFFF
+  width: 381px
+  position: relative
+  text-align: left
 
-    position: relative;
-    text-align: left;
+  &__block
+    padding: 19px 28px
 
-    &__block {
-        padding: 19px 28px;
+    &+.cart__block
+      border-top: 1px solid #6E8484
 
-        &+.cart__block {
-            border-top: 1px solid #6E8484;
-        }
-    }
+  &__close
+    cursor: pointer
+    display: flex
+    height: 41px
+    width: 41px
+    top: 0
+    right: 0
+    position: absolute
+    background: #0A655E
+    align-items: center
+    justify-content: center
+    transition: filter 0.3s ease
 
-    &__close {
-        cursor: pointer;
-        display: flex;
-        height: 41px;
-        width: 41px;
-        top: 0;
-        right: 0;
-        position: absolute;
-        background: #0A655E;
-        align-items: center;
-        justify-content: center;
-        transition: filter 0.3s ease;
+    :hover
+      filter: brightness(80%)
 
-        :hover {
-            filter: brightness(80%);
-        }
-    }
+  &__title
+    color: #2E3838
+    font-size: 18px
+    font-weight: bold
 
-    &__title {
-        color: #2E3838;
-        font-size: 18px;
-        font-weight: bold;
-    }
+  &__summary
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 23px
 
-    &__summary {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 23px;
-    }
+  &__summary-label
+    font-size: 16px
+    line-height: 19px
+    color: #2E3838
+    font-weight: bold
 
-    &__summary-label {
-        font-size: 16px;
-        line-height: 19px;
-        color: #2E3838;
-        font-weight: bold;
-    }
+  &__sumary-price
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: #2E3838
 
-    &__sumary-price {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #2E3838;
+    &--value
+      font-size: 22px
+      line-height: 27px
+      font-weight: 900
 
-        &--value {
-            font-size: 22px;
-            line-height: 27px;
-            font-weight: 900;
-        }
+    &--vat
+      font-size: 14px
+      font-weight: 300
 
-        &--vat {
-            font-size: 14px;
-            font-weight: 300;
-        }
-    }
+  &__button
+    cursor: pointer
+    color: #FFFFFF
+    background-color: #D1B352
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: filter 0.3s ease
+    margin-left: 7px
 
-    &__button {
-        cursor: pointer;
-        color: #FFFFFF;
-        background-color: #D1B352;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: filter 0.3s ease;
-        margin-left: 7px;
+    &:hover
+      filter: brightness(80%)
 
-        &:hover {
-            filter: brightness(80%);
-        }
-    }
-
-    &__annotate {
-        color: #2e3838;
-        margin: 20px 0;
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-}
+  &__annotate
+    color: #2e3838
+    margin: 20px 0
+    padding: 10px 20px
+    font-size: 14px
 </style>

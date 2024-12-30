@@ -21,24 +21,22 @@ const closeOverlay = () => {
 }
 </script>
 
-<style lang="scss" scoped>
-.page-wrapper {
-  position: relative;
+<style lang="sass" scoped>
+.page-wrapper
+  position: relative
 
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(62, 62, 62, 0.6);
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-  }
+  &__overlay
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(62, 62, 62, 0.6)
+    width: 100%
+    height: 100%
+    z-index: 100
 
-  .container {
-    position: relative;
-    display: flex;
+  .container
+    position: relative
+    display: flex
     justify-content: flex-end
-  }
-}
 </style>
+

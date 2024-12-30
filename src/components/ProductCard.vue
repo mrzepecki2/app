@@ -34,74 +34,63 @@ const viewDetails = () => {
 
 </script>
 
-<style lang="scss" scoped>
-.product-card {
-  position: relative;
-  flex-direction: column;
-  margin: 1rem;
-  color: #0A655E;
-  font-size: 14px;
-  cursor: pointer;
+<style lang="sass" scoped>
+.product-card
+  position: relative
+  flex-direction: column
+  margin: 1rem
+  color: #0A655E
+  font-size: 14px
+  cursor: pointer
 
-  &:before {
-    content: "";
-    box-sizing: border-box;
-    background-color: inherit;
-    display: block;
-    position: absolute;
-    opacity: 0;
-    height: 70%;
-    width: 100%;
-    bottom: 0;
-    border: 1px solid #D1B352;
-    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
-    box-shadow: 20px 20px 40px #2E383826;
-  }
+  &:before
+    content: ""
+    box-sizing: border-box
+    background-color: inherit
+    display: block
+    position: absolute
+    opacity: 0
+    height: 70%
+    width: 100%
+    bottom: 0
+    border: 1px solid #D1B352
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all
+    box-shadow: 20px 20px 40px #2E383826
 
-  &:hover {
-    color: #D1B352;
+  &:hover
+    color: #D1B352
 
-    &::before {
-      opacity: 1;
+    &::before
+      opacity: 1
 
-    }
-  }
+  &__image
+    width: auto
+    height: 190px
+    z-index: 2
+    position: relative
 
-  &__image {
-    width: auto;
-    height: 190px;
-    z-index: 2;
-    position: relative;
-  }
+  &__info
+    padding: 0.5rem 0
+    text-align: center
+    z-index: 2
+    position: relative
 
-  &__info {
-    padding: 0.5rem 0;
-    text-align: center;
-    z-index: 2;
-    position: relative;
-  }
+  &__name
+    height: 50px
+    margin-bottom: 5px
+    font-size: 1.2rem
+    font-weight: bold
+    margin-top: 0.5rem
 
-  &__name {
-    height: 50px;
-    margin-bottom: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 0.5rem;
-  }
+  &__price
+    font-weight: bold
+    font-size: 1.75rem
+    padding-bottom: 13px
 
-  &__price {
-    font-weight: bold;
-    font-size: 1.75rem;
-    padding-bottom: 13px;
-  }
+  &__vat
+    font-size: 0.875rem
+    padding-bottom: 10px
 
-  &__vat {
-    font-size: 0.875rem;
-    padding-bottom: 10px;
-  }
-
-  &__details-button {
-    font-size: 0.875rem;
-  }
-}
+  &__details-button
+    font-size: 0.875rem
 </style>
