@@ -1,5 +1,11 @@
-# Vue 3 + TypeScript + Vite
+1. `npm i`
+2. `npm run dev`
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Uwagi do makiety:
+- Brak jakiegokolwiek widoku mobile
+- Różne odstępy między takimi samymi elementami i same różnice w elementach
+- Line-height często mniejsze niż wielkość fontu, co sprawia, że realnie trzeba brać wartości na oko
+- Brak wytycznych co do tego baner, czym on jest, w jaki sposób ma być stworzony, czy jest to może wyłącznie obrazek, w jakim stopniu ma być edytowalny i czy w ogóle.
+- Nieścisłość w przypadku listy produktów i tego jak ma się wyświetlać dłuższa nazwa, czy ma być jakoś ucinana
+- Generalnie brak informacji, które pozyskałoby się od pm'a, analityka, czy ux'a
